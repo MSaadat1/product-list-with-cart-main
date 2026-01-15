@@ -22,7 +22,7 @@ export function YourCard({
         <p className="card-title">Your Card ({totalItems})</p>
         {cartItems.length === 0 ? (
           <div className="empty-card">
-            <img src="/images/illustration-empty-cart.svg" alt="" />
+            <img src={`${import.meta.env.BASE_URL}images/illustration-empty-cart.svg`} alt="" />
             <p>Your added items will appear here!</p>
           </div>
         ) : (
@@ -57,7 +57,7 @@ export function YourCard({
               <h4>${totalPrice.toFixed(2)}</h4>
             </div>
             <div className="carbon-free-container">
-              <img src="/images/icon-carbon-neutral.svg" alt="" />
+              <img src={`${import.meta.env.BASE_URL}images/icon-carbon-neutral.svg`} alt="" />
               <p className="carbon-free">
                 This is a{" "}
                 <span className="carbon-free-inside-text">carbon-neutral </span>

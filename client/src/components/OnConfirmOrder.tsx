@@ -11,7 +11,7 @@ export function OnConfirmOrder({ cartItems, totalPrice, setNewOrder }: Props) {
     <>
       <div className="overlay">
         <div className="confirm-container">
-          <img src="/images/icon-order-confirmed.svg" alt="" />
+          <img src={`${import.meta.env.BASE_URL}images/icon-order-confirmed.svg`} alt="" />
           <h2 className="confirm-order-header">Order confirmed</h2>
           <p className="confirm-order-subheader">
             We hope you enjoy your food!
@@ -23,7 +23,7 @@ export function OnConfirmOrder({ cartItems, totalPrice, setNewOrder }: Props) {
                   <div className="confirm-img-info">
                     <img
                       className="confirm-img"
-                      src={item.image.thumbnail}
+                      src={`${import.meta.env.BASE_URL}${item.image.thumbnail}`}
                       alt="item-img"
                     />
                     <div>

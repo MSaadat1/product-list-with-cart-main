@@ -17,7 +17,7 @@ export function MenuItems({
   return (
     <div className="menu-box">
       <div className="menu-img">
-        <img src={item.image.desktop} alt="image" />
+        <img src={`${import.meta.env.BASE_URL}${item.image.desktop}`} alt="image" />
       </div>
 
       <div className="cart-btn">
@@ -25,7 +25,7 @@ export function MenuItems({
           <button className="btn-not-active" onClick={() => onAdds(item)}>
             <img
               className="cart-img"
-              src="./images/icon-add-to-cart.svg"
+              src={`${import.meta.env.BASE_URL}images/icon-add-to-cart.svg`}
               alt="cart-image"
             />
             <p className="btn-not-active-text">Add to Cart</p>
